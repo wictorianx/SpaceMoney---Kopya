@@ -1,0 +1,76 @@
+
+.grid{
+    padding:15;
+    width: 450px;
+    height: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: lightblue;
+}
+
+
+.grid div{
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* .test {
+    border: solid black 1px;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+} */
+
+
+
+
+/* #alien{
+
+border: white solid 1px;
+
+} */
+
+
+/* 
+.alien{
+    
+} */
+
+/**/ 
+/*
+#alien {
+    background-image: url("alien.png");
+}
+
+#astreoid_mine {
+    background-image: url("astreoid_mine.png");
+}
+
+#energy {
+    background-image: url("energy.png");
+}
+
+#research {
+    background-image: url("research.png");
+}
+
+#rocket {
+    background-image: url("rocket.png");
+}
+
+#satellite {
+    background-image: url("satellite.png");
+}
+
+#space_elevator {
+    background-image: url("space_elevator.png");
+}
+
+#space_tourist {
+    background-image: url("space_tourist.png");
+} */
