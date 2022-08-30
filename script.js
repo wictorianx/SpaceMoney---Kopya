@@ -1,7 +1,10 @@
 
-let gold
-let cps
-
+let gold=5
+let cps=0
+let goldTimer = setInterval(function(){
+    gold+=cps
+    console.log(gold.toFixed(2))}
+    ,1000)
 class business {
     constructor(name, display, amount, price, cpsData, button,location){
         this.name = name;
@@ -11,7 +14,7 @@ class business {
         this.cpsData = cpsData;
         this.button = button;
         this.location=location;
-        console.log(this.amount);
+        this.orgPrice = price;
     }
     main(){
 
@@ -19,12 +22,14 @@ class business {
         
     }
     calculate() {
-
+        
         let a = biz[parseInt(this.alt)]
+        if (gold>=a.price){
         a.amount+=1
+        gold-=a.price
         a.price*=a.cpsData+1
         a.display.textContent=a.amount
-        console.log(a.name)
+        cps+=a.orgPrice/10}
     }
 }
 
@@ -51,6 +56,5 @@ biz = [
 for(let i = 0; i<biz.length;i++){
     biz[i].display.textContent = biz[i].name
     biz[i].main()
-    console.log(biz[i])
 }
 
